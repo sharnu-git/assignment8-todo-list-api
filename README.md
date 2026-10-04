@@ -291,3 +291,35 @@ You can also run the built-in end-to-end automated test suite anytime with:
 node test_endpoints.js
 ```
 This tests database connectivity, validation errors, CRUD lifecycle, analytics aggregation, and clean deletion against the live database.
+
+---
+
+## 🎨 Part 2: React Frontend Integration (TaskFlow)
+
+A modern, responsive, and dynamic Single Page Application (SPA) built with **React**, **Vite**, **Axios**, and **Vanilla CSS Design System**.
+
+### Frontend Features
+- **API Integration via Axios**: Fully configured in `frontend/src/api/` with interceptors, standardized error handling, and timeout guards.
+- **Dynamic Task Management**:
+  - Real-time creation, editing, status toggling, and deletion.
+  - Interactive search bar with debounce.
+  - Category tabs (`All`, `Pending`, `In Progress`, `Completed`).
+  - Priority and sorting filters (`Date Created`, `Priority`, `Status`, `Alphabetical`).
+  - Pagination controls.
+- **Analytics & Progress**:
+  - Live metric cards showing Total, Pending, In-Progress, and Completed tasks.
+  - Animated completion rate progress bar.
+- **Feedback & Error Handling**:
+  - Floating Toast notification system for success, info, and error messages.
+  - Live backend connection indicator (`Online` / `Disconnected`).
+  - Interactive confirmation modals for irreversible actions.
+  - Skeleton loading states and empty state illustrations.
+
+### Running Backend and Frontend Together
+Run both servers concurrently with a single command from the project root:
+```bash
+npm run dev
+```
+- **Backend API Server**: `http://localhost:5000`
+- **Frontend Web Application**: `http://localhost:3000` (or `http://localhost:3001` if 3000 is occupied)
+
